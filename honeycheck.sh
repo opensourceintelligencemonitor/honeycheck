@@ -1,3 +1,3 @@
 #!/bin/bash
-ARGV0=$0
-while read line; do sudo shodan honeyscore "$line"; done <$0
+ip=$1
+while read line; do sudo shodan honeyscore "$line"; done <$ip
