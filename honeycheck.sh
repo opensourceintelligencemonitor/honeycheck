@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "enter url/ip list and location"
-read URL
-while read line; do sudo shodan honeyscore "$line"; done <$URL
+ARGV0=$0
+while read line; do sudo shodan honeyscore "$line"; done <$0
